@@ -382,11 +382,11 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@swissknife-api-components-nodejs/application-runner@^0.2.0, @swissknife-api-components-nodejs/application-runner@workspace:packages/application-runner":
+"@swissknife-api-components-nodejs/application-runner@^0.3.0, @swissknife-api-components-nodejs/application-runner@workspace:packages/application-runner":
   version: 0.0.0-use.local
   resolution: "@swissknife-api-components-nodejs/application-runner@workspace:packages/application-runner"
   dependencies:
-    "@swissknife-api-components-nodejs/logger": ^0.2.0
+    "@swissknife-api-components-nodejs/logger": ^0.3.0
     "@types/chai": ^4.3.11
     "@types/mocha": ^10.0.6
     "@types/node": ^20.11.5
@@ -401,12 +401,12 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@swissknife-api-components-nodejs/auth-service@^0.2.0, @swissknife-api-components-nodejs/auth-service@workspace:packages/auth-service":
+"@swissknife-api-components-nodejs/auth-service@^0.3.0, @swissknife-api-components-nodejs/auth-service@workspace:packages/auth-service":
   version: 0.0.0-use.local
   resolution: "@swissknife-api-components-nodejs/auth-service@workspace:packages/auth-service"
   dependencies:
-    "@swissknife-api-components-nodejs/axios-client": ^0.2.0
-    "@swissknife-api-components-nodejs/user": ^0.2.0
+    "@swissknife-api-components-nodejs/axios-client": ^0.3.0
+    "@swissknife-api-components-nodejs/user": ^0.3.0
     "@types/chai": ^4.3.11
     "@types/chai-as-promised": ^7.1.8
     "@types/jsonwebtoken": ^9.0.5
@@ -427,11 +427,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@swissknife-api-components-nodejs/axios-client@^0.2.0, @swissknife-api-components-nodejs/axios-client@workspace:packages/axios-client":
+"@swissknife-api-components-nodejs/axios-client@^0.3.0, @swissknife-api-components-nodejs/axios-client@workspace:packages/axios-client":
   version: 0.0.0-use.local
   resolution: "@swissknife-api-components-nodejs/axios-client@workspace:packages/axios-client"
   dependencies:
-    "@swissknife-api-components-nodejs/requests": ^0.2.0
+    "@swissknife-api-components-nodejs/requests": ^0.3.0
     "@types/lodash": ^4.14.202
     "@types/node": ^20.11.5
     "@types/qs": ^6.9.11
@@ -449,10 +449,10 @@ __metadata:
   resolution: "@swissknife-api-components-nodejs/express-rest-interface@workspace:packages/express-rest-interface"
   dependencies:
     "@paralleldrive/cuid2": ^2.2.2
-    "@swissknife-api-components-nodejs/application-runner": ^0.2.0
-    "@swissknife-api-components-nodejs/auth-service": ^0.2.0
-    "@swissknife-api-components-nodejs/logger": ^0.2.0
-    "@swissknife-api-components-nodejs/requests": ^0.2.0
+    "@swissknife-api-components-nodejs/application-runner": ^0.3.0
+    "@swissknife-api-components-nodejs/auth-service": ^0.3.0
+    "@swissknife-api-components-nodejs/logger": ^0.3.0
+    "@swissknife-api-components-nodejs/requests": ^0.3.0
     "@types/body-parser": ^1.19.5
     "@types/chai": ^4.3.11
     "@types/cors": ^2.8.17
@@ -485,11 +485,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@swissknife-api-components-nodejs/logger@^0.2.0, @swissknife-api-components-nodejs/logger@workspace:packages/logger":
+"@swissknife-api-components-nodejs/logger@^0.3.0, @swissknife-api-components-nodejs/logger@workspace:packages/logger":
   version: 0.0.0-use.local
   resolution: "@swissknife-api-components-nodejs/logger@workspace:packages/logger"
   dependencies:
-    "@swissknife-api-components-nodejs/requests": ^0.2.0
+    "@swissknife-api-components-nodejs/requests": ^0.3.0
     "@types/chai": ^4.3.11
     "@types/lodash": ^4.14.202
     "@types/mocha": ^10.0.6
@@ -510,11 +510,11 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@swissknife-api-components-nodejs/requests@^0.2.0, @swissknife-api-components-nodejs/requests@workspace:packages/requests":
+"@swissknife-api-components-nodejs/requests@^0.3.0, @swissknife-api-components-nodejs/requests@workspace:packages/requests":
   version: 0.0.0-use.local
   resolution: "@swissknife-api-components-nodejs/requests@workspace:packages/requests"
   dependencies:
-    "@swissknife-api-components-nodejs/user": ^0.2.0
+    "@swissknife-api-components-nodejs/user": ^0.3.0
     "@types/chai": ^4.3.11
     "@types/express": ^4.17.21
     "@types/mocha": ^10.0.6
@@ -528,7 +528,7 @@ __metadata:
   languageName: unknown
   linkType: soft
 
-"@swissknife-api-components-nodejs/user@^0.2.0, @swissknife-api-components-nodejs/user@workspace:packages/user":
+"@swissknife-api-components-nodejs/user@^0.3.0, @swissknife-api-components-nodejs/user@workspace:packages/user":
   version: 0.0.0-use.local
   resolution: "@swissknife-api-components-nodejs/user@workspace:packages/user"
   dependencies:

@@ -1,6 +1,6 @@
 {
   "name": "@swissknife-api-components-nodejs/express-rest-interface",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "repository": {
     "type": "git",
     "url": "https://github.com/ThomasTaglia/swissknife-api-components-nodejs.git"
@@ -15,10 +15,10 @@
   },
   "dependencies": {
     "@paralleldrive/cuid2": "^2.2.2",
-    "@swissknife-api-components-nodejs/application-runner": "^0.2.0",
-    "@swissknife-api-components-nodejs/auth-service": "^0.2.0",
-    "@swissknife-api-components-nodejs/logger": "^0.2.0",
-    "@swissknife-api-components-nodejs/requests": "^0.2.0",
+    "@swissknife-api-components-nodejs/application-runner": "^0.3.0",
+    "@swissknife-api-components-nodejs/auth-service": "^0.3.0",
+    "@swissknife-api-components-nodejs/logger": "^0.3.0",
+    "@swissknife-api-components-nodejs/requests": "^0.3.0",
     "@types/express": "^4.17.21",
     "body-parser": "^1.20.2",
     "cors": "^2.8.5",
