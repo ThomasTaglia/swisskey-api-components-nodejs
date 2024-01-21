@@ -14,8 +14,8 @@
     "test": "mocha"
   },
   "dependencies": {
-    "@swissknife-api-components-nodejs/axios-client": "workspace:^",
-    "@swissknife-api-components-nodejs/user": "workspace:^",
+    "@swissknife-api-components-nodejs/axios-client": "^0.2.0",
+    "@swissknife-api-components-nodejs/user": "^0.2.0",
     "jsonwebtoken": "^9.0.2",
     "lru-cache": "^10.1.0"
   },

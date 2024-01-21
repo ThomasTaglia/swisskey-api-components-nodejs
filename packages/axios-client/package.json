@@ -13,7 +13,7 @@
     "compile": "rm -rf build && tsc"
   },
   "dependencies": {
-    "@swissknife-api-components-nodejs/requests": "workspace:^",
+    "@swissknife-api-components-nodejs/requests": "^0.2.0",
     "axios": "^1.6.5",
     "lodash": "^4.17.21",
     "nanoid": "^5.0.4",

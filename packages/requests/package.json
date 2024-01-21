@@ -14,7 +14,7 @@
     "test": "mocha"
   },
   "dependencies": {
-    "@swissknife-api-components-nodejs/user": "workspace:^"
+    "@swissknife-api-components-nodejs/user": "^0.2.0"
   },
   "devDependencies": {
     "@types/chai": "^4.3.11",
