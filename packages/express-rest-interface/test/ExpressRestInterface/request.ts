@@ -15,7 +15,7 @@ import {
 describe("request", () => {
     it("is correctly set for each http request", async () => {
         // Setup mocks
-        const mockAgyoRequestService = makeMockSwissknifeRequestService();
+        const mockSwissknifeRequestService = makeMockSwissknifeRequestService();
 
         // Setup SUT
         const routes: Route[] = [
@@ -30,7 +30,7 @@ describe("request", () => {
             },
         ];
         const expressRestInterface = new ExpressRestInterface(
-            mockAgyoRequestService,
+            mockSwissknifeRequestService,
             makeMockLogger() as any,
             makeMockConfiguration() as any,
             routes,
@@ -59,7 +59,7 @@ describe("request", () => {
             .expect(200);
 
         // Verify
-        expect(mockAgyoRequestService.get()).to.deep.equal({
+        expect(mockSwissknifeRequestService.get()).to.deep.equal({
             accessToken: accessToken,
             user: {
                 id: uid,

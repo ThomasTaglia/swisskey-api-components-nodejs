@@ -96,7 +96,7 @@ describe("AuthService", () => {
     });
 
     describe("getUser", () => {
-        it("returns the AgyoUser corresponding to the supplied TeamSystemID token", async () => {
+        it("returns the User corresponding to the supplied token", async () => {
             // Setup mocks
             const mockIdentifiers = {
                 subject: "email@example.com",
