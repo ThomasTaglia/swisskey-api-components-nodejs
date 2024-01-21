@@ -1,8 +1,11 @@
-import { User } from "@swissknife-api-components-nodejs/user";
 import AxiosClient from "@swissknife-api-components-nodejs/axios-client";
+import { User } from "@swissknife-api-components-nodejs/user";
+import { decode } from "jsonwebtoken";
+import { isNil } from "lodash";
 import { LRUCache } from "lru-cache";
 
 import AuthIdentifiers from "./AuthIdentifiers";
+import AuthTokenClaims from "./AuthTokenClaims";
 import InvalidAccessToken from "./InvalidAccessToken";
 
 export default class AuthService {
@@ -101,17 +104,25 @@ export default class AuthService {
     private async getIdentifiers(
         accessToken: string,
     ): Promise<AuthIdentifiers> {
-        const response =
-            await this.authServiceAxiosClient.request<AuthIdentifiers>({
-                url: "/api/v1/identifiers",
-                method: "get",
-                headers: {
-                    authorization: `Bearer ${accessToken}`,
-                    // The auth-service breaks (500) if no content-type is
-                    // provided
-                    "content-type": "application/json",
-                },
-            });
-        return response.data;
+        const claims = decode(accessToken) as AuthTokenClaims;
+        if (!isNil(claims)) {
+            return {
+                id: claims.uid,
+                subject: claims.sub,
+            };
+        } else {
+            const response =
+                await this.authServiceAxiosClient.request<AuthIdentifiers>({
+                    url: "/api/v1/identifiers",
+                    method: "get",
+                    headers: {
+                        authorization: `Bearer ${accessToken}`,
+                        // The auth-service breaks (500) if no content-type is
+                        // provided
+                        "content-type": "application/json",
+                    },
+                });
+            return response.data;
+        }
     }
 }

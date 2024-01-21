@@ -16,11 +16,13 @@
   "dependencies": {
     "@swissknife-api-components-nodejs/axios-client": "workspace:^",
     "@swissknife-api-components-nodejs/user": "workspace:^",
+    "jsonwebtoken": "^9.0.2",
     "lru-cache": "^10.1.0"
   },
   "devDependencies": {
     "@types/chai": "^4.3.11",
     "@types/chai-as-promised": "^7.1.8",
+    "@types/jsonwebtoken": "^9.0.5",
     "@types/lru-cache": "^7.10.10",
     "@types/mocha": "^10.0.6",
     "@types/node": "^20.11.5",
