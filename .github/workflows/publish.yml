@@ -22,6 +22,6 @@ jobs:
       - name: Build dependencies
         run: yarn compile
       - name: Add NPM auth token
-        run: yarn config set -H "npmRegistries['//registry.npmjs.org'].npmAuthToken" ${{ secrets.API_COMPONENTS_NODEJS_NPM_RW_TOKEN }}
+        run: yarn config set -H "npmRegistries['//registry.npmjs.org'].npmAuthToken" ${{ secrets.SWISSKEY_API_COMPONENTS_NODEJS_NPM_RW_TOKEN }}
       - name: Publish package on NPM 📦
         run: yarn workspaces foreach --exclude swissknife-api-components-nodejs npm publish --tag="${{ github.ref_name }}" --access public --tag=latest
