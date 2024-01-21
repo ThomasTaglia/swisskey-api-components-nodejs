@@ -1,3 +1,9 @@
+## 0.3.0 (January 21, 2024)
+
+Features:
+
+- use custom components version in components packages dependencies
+
 ## 0.2.0 (January 21, 2024)
 
 Features:
