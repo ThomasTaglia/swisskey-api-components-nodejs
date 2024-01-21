@@ -292,6 +292,13 @@ __metadata:
   languageName: node
   linkType: hard
 
+"@noble/hashes@npm:^1.1.5":
+  version: 1.3.3
+  resolution: "@noble/hashes@npm:1.3.3"
+  checksum: 8a6496d1c0c64797339bc694ad06cdfaa0f9e56cd0c3f68ae3666cfb153a791a55deb0af9c653c7ed2db64d537aa3e3054629740d2f2338bb1dcb7ab60cd205b
+  languageName: node
+  linkType: hard
+
 "@npmcli/agent@npm:^2.0.0":
   version: 2.2.0
   resolution: "@npmcli/agent@npm:2.2.0"
@@ -311,6 +318,15 @@ __metadata:
   dependencies:
     semver: ^7.3.5
   checksum: a50a6818de5fc557d0b0e6f50ec780a7a02ab8ad07e5ac8b16bf519e0ad60a144ac64f97d05c443c3367235d337182e1d012bbac0eb8dbae8dc7b40b193efd0e
+  languageName: node
+  linkType: hard
+
+"@paralleldrive/cuid2@npm:^2.2.2":
+  version: 2.2.2
+  resolution: "@paralleldrive/cuid2@npm:2.2.2"
+  dependencies:
+    "@noble/hashes": ^1.1.5
+  checksum: f7f6ac70e0268ec2c72e555719240d5c2c9a859ce541ac1c637eed3f3ee971b42881d299dedafbded53e7365b9e98176c5a31c442c1112f7e9e7306f2fd0ecbb
   languageName: node
   linkType: hard
 
@@ -393,6 +409,7 @@ __metadata:
     "@swissknife-api-components-nodejs/user": "workspace:^"
     "@types/chai": ^4.3.11
     "@types/chai-as-promised": ^7.1.8
+    "@types/jsonwebtoken": ^9.0.5
     "@types/lru-cache": ^7.10.10
     "@types/mocha": ^10.0.6
     "@types/node": ^20.11.5
@@ -400,6 +417,7 @@ __metadata:
     "@types/sinon-chai": ^3.2.12
     chai: ^4.4.1
     chai-as-promised: ^7.1.1
+    jsonwebtoken: ^9.0.2
     lru-cache: ^10.1.0
     mocha: ^10.2.0
     sinon: ^17.0.1
@@ -430,6 +448,7 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "@swissknife-api-components-nodejs/express-rest-interface@workspace:packages/express-rest-interface"
   dependencies:
+    "@paralleldrive/cuid2": ^2.2.2
     "@swissknife-api-components-nodejs/application-runner": "workspace:^"
     "@swissknife-api-components-nodejs/auth-service": "workspace:^"
     "@swissknife-api-components-nodejs/logger": "workspace:^"
@@ -449,14 +468,13 @@ __metadata:
     "@types/swagger-ui-express": ^4.1.6
     axios: ^1.6.5
     body-parser: ^1.20.2
-    chai: ^5.0.0
+    chai: ^4.4.1
     cors: ^2.8.5
     express: ^4.18.2
     express-openapi-validator: ^5.1.2
     jsonwebtoken: ^9.0.2
     lodash: ^4.17.21
     mocha: ^10.2.0
-    nanoid: ^5.0.4
     sinon: ^17.0.1
     sinon-chai: ^3.7.0
     statuses: ^2.0.1
@@ -1040,13 +1058,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"assertion-error@npm:^2.0.1":
-  version: 2.0.1
-  resolution: "assertion-error@npm:2.0.1"
-  checksum: a0789dd882211b87116e81e2648ccb7f60340b34f19877dd020b39ebb4714e475eb943e14ba3e22201c221ef6645b7bfe10297e76b6ac95b48a9898c1211ce66
-  languageName: node
-  linkType: hard
-
 "asynckit@npm:^0.4.0":
   version: 0.4.0
   resolution: "asynckit@npm:0.4.0"
@@ -1280,19 +1291,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"chai@npm:^5.0.0":
-  version: 5.0.0
-  resolution: "chai@npm:5.0.0"
-  dependencies:
-    assertion-error: ^2.0.1
-    check-error: ^2.0.0
-    deep-eql: ^5.0.1
-    loupe: ^3.0.0
-    pathval: ^2.0.0
-  checksum: f81ca1830f918a0d377de151c076a8d138929a886cdd4d0a7e3c4ab2f8f0869fc92f43430e6e75460539de9a2abe48cdc4d4fb73fc67e24f53c23a0b01875ca8
-  languageName: node
-  linkType: hard
-
 "chalk@npm:^2.4.2":
   version: 2.4.2
   resolution: "chalk@npm:2.4.2"
@@ -1320,13 +1318,6 @@ __metadata:
   dependencies:
     get-func-name: ^2.0.2
   checksum: e2131025cf059b21080f4813e55b3c480419256914601750b0fee3bd9b2b8315b531e551ef12560419b8b6d92a3636511322752b1ce905703239e7cc451b6399
-  languageName: node
-  linkType: hard
-
-"check-error@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "check-error@npm:2.0.0"
-  checksum: 120f252c2e1ad82ef82a616662805345c6c361347bfd6203f8a28c53a158811dd0ea21278f29c8136cc9df12fc7f077d1a07124569d98fb396b3072d08f2f092
   languageName: node
   linkType: hard
 
@@ -1654,13 +1645,6 @@ __metadata:
   dependencies:
     type-detect: ^4.0.0
   checksum: 7f6d30cb41c713973dc07eaadded848b2ab0b835e518a88b91bea72f34e08c4c71d167a722a6f302d3a6108f05afd8e6d7650689a84d5d29ec7fe6220420397f
-  languageName: node
-  linkType: hard
-
-"deep-eql@npm:^5.0.1":
-  version: 5.0.1
-  resolution: "deep-eql@npm:5.0.1"
-  checksum: 8009e8a8bf3e0f591a122e7788e304a2bed1299b7774f039be96f9ef35c00fb254292fb1568952651aea0c1d1eb23d0bca484bbdd2cf4fcee685c6f2c43670f3
   languageName: node
   linkType: hard
 
@@ -2865,15 +2849,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"loupe@npm:^3.0.0":
-  version: 3.1.0
-  resolution: "loupe@npm:3.1.0"
-  dependencies:
-    get-func-name: ^2.0.1
-  checksum: e23814854ab2571e3f753b7c198bfe016c708f3a435501624dd6ff79b6a5544e14b0f28cfc0432eb22e9da9177b1533491871aca3f94d56b19fecc0d4a766e58
-  languageName: node
-  linkType: hard
-
 "lru-cache@npm:*, lru-cache@npm:^10.0.1, lru-cache@npm:^10.1.0, lru-cache@npm:^9.1.1 || ^10.0.0":
   version: 10.1.0
   resolution: "lru-cache@npm:10.1.0"
@@ -3565,13 +3540,6 @@ __metadata:
   version: 1.1.1
   resolution: "pathval@npm:1.1.1"
   checksum: 090e3147716647fb7fb5b4b8c8e5b55e5d0a6086d085b6cd23f3d3c01fcf0ff56fd3cc22f2f4a033bd2e46ed55d61ed8379e123b42afe7d531a2a5fc8bb556d6
-  languageName: node
-  linkType: hard
-
-"pathval@npm:^2.0.0":
-  version: 2.0.0
-  resolution: "pathval@npm:2.0.0"
-  checksum: 682b6a6289de7990909effef7dae9aa7bb6218c0426727bccf66a35b34e7bfbc65615270c5e44e3c9557a5cb44b1b9ef47fc3cb18bce6ad3ba92bcd28467ed7d
   languageName: node
   linkType: hard
 

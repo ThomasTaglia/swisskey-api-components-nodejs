@@ -10,9 +10,11 @@
     "build/src/**/*"
   ],
   "scripts": {
-    "compile": "rm -rf build && tsc"
+    "compile": "rm -rf build && tsc",
+    "test": "mocha"
   },
   "dependencies": {
+    "@paralleldrive/cuid2": "^2.2.2",
     "@swissknife-api-components-nodejs/application-runner": "workspace:^",
     "@swissknife-api-components-nodejs/auth-service": "workspace:^",
     "@swissknife-api-components-nodejs/logger": "workspace:^",
@@ -24,7 +26,6 @@
     "express-openapi-validator": "^5.1.2",
     "jsonwebtoken": "^9.0.2",
     "lodash": "^4.17.21",
-    "nanoid": "^5.0.4",
     "statuses": "^2.0.1",
     "swagger-ui-express": "^5.0.0"
   },
@@ -42,7 +43,7 @@
     "@types/supertest": "^6.0.2",
     "@types/swagger-ui-express": "^4.1.6",
     "axios": "^1.6.5",
-    "chai": "^5.0.0",
+    "chai": "^4.4.1",
     "mocha": "^10.2.0",
     "sinon": "^17.0.1",
     "sinon-chai": "^3.7.0",

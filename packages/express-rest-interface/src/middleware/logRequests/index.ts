@@ -1,3 +1,4 @@
+import { createId } from "@paralleldrive/cuid2";
 import {
     Logger,
     LoggingHeader,
@@ -9,7 +10,6 @@ import {
 } from "@swissknife-api-components-nodejs/requests";
 import { RequestHandler } from "express";
 import { first } from "lodash";
-import { nanoid } from "nanoid";
 
 import forwardThrownRequestHandlerErrors from "../../utils/forwardThrownRequestHandlerErrors";
 import getIncomingRequestLogInfo from "./getIncomingRequestLogInfo";
@@ -28,8 +28,9 @@ export default function logRequest(
             accessToken: null,
             user: null,
             locale: first(req.acceptsLanguages()) ?? DEFAULT_LOCALE,
-            requestId: req.header(LoggingHeader.XRequestId) ?? nanoid(),
-            correlationId: req.header(LoggingHeader.XCorrelationId) ?? nanoid(),
+            requestId: req.header(LoggingHeader.XRequestId) ?? createId(),
+            correlationId:
+                req.header(LoggingHeader.XCorrelationId) ?? createId(),
             appName: req.header(LoggingHeader.XAppName) ?? MISSING_HEADER,
             appVersion: req.header(LoggingHeader.XAppVersion) ?? MISSING_HEADER,
         };
