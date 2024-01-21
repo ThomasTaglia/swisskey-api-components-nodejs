@@ -3,5 +3,7 @@
   "include": ["src/**/*.ts", "test/**/*.ts"],
   "compilerOptions": {
     "outDir": "build",
+    "typeRoots": ["typings/", "../../node_modules/@types/"],
   },
+  "exclude": ["typings/", "../../node_modules/@types/"],
 }
