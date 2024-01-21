@@ -1,0 +1,35 @@
+{
+  "name": "swissknife-api-components-nodejs",
+  "version": "0.0.0",
+  "description": "Common components used to build Clean Architecture based Node.js APIs",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ThomasTaglia/swissknife-api-components-nodejs.git"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "workspaces": [
+    "packages/*"
+  ],
+  "scripts": {
+    "compile": "turbo run compile",
+    "test": "turbo run test",
+    "clean": "turbo run clean",
+    "check-formatting": "prettier --list-different .",
+    "fix-formatting": "prettier --write .",
+    "release": "/bin/sh scripts/release.sh",
+    "prepare": "husky install"
+  },
+  "devDependencies": {
+    "@commitlint/cli": "^18.4.4",
+    "@commitlint/config-conventional": "^18.4.4",
+    "husky": "^8.0.3",
+    "prettier": "^3.2.4",
+    "prettier-plugin-organize-imports": "^3.2.4",
+    "prettier-plugin-sh": "^0.14.0",
+    "turbo": "^1.11.3",
+    "typescript": "^5.3.3"
+  },
+  "packageManager": "yarn@3.6.4"
+}

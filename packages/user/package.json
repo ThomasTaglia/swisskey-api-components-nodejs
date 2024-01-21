@@ -1,0 +1,19 @@
+{
+  "name": "@swissknife-api-components-nodejs/user",
+  "version": "0.0.0",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ThomasTaglia/swissknife-api-components-nodejs.git"
+  },
+  "main": "build/src/index.js",
+  "files": [
+    "build/src/**/*"
+  ],
+  "scripts": {
+    "compile": "rm -rf build && tsc"
+  },
+  "devDependencies": {
+    "typescript": "^5.3.3"
+  },
+  "packageManager": "yarn@3.6.4"
+}
