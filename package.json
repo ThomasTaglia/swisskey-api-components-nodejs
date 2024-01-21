@@ -1,6 +1,6 @@
 {
   "name": "swissknife-api-components-nodejs",
-  "version": "0.0.0",
+  "version": "0.1.0",
   "description": "Common components used to build Clean Architecture based Node.js APIs",
   "repository": {
     "type": "git",
